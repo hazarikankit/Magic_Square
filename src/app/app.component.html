@@ -1,0 +1,7 @@
+<div class="timer">
+  <countdown [config]="{leftTime: time_duration}"></countdown>
+</div>
+<div class="btn_start">
+  <button *ngIf="!isStart" (click)="startClick()">Start</button>
+  <button *ngIf="isStart" (click)="endClick()">End</button>
+</div>
